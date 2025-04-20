@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhu-fy - Legendary Quotes</title>
+    <title>Sidhu-fy - Legendary Quotes</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         
@@ -52,7 +52,7 @@
             animation: gradient 2s ease infinite;
         }
         
-        #siddhu-avatar-loading {
+        #sidhu-avatar-loading {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -115,7 +115,7 @@
             z-index: 3;
         }
         
-        #siddhu-avatar {
+        #sidhu-avatar {
             position: absolute;
             bottom: -10px;
             right: -10px;
@@ -292,16 +292,16 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <img id="siddhu-avatar-loading" src="/api/placeholder/150/150" alt="Navjot Singh Siddhu" />
+        <img id="sidhu-avatar-loading" src="/api/placeholder/150/150" alt="Navjot Singh Sidhu" />
         <h1 id="loading-text">Oye Guru...</h1>
     </div>
     
     <!-- Main App Container -->
     <div id="app-container">
         <div id="quote-container">
-            <p id="quote-text">Loading Siddhu's wisdom...</p>
+            <p id="quote-text">Loading Sidhu's wisdom...</p>
             <button id="copy-btn">📋</button>
-            <img id="siddhu-avatar" src="/api/placeholder/100/100" alt="Navjot Singh Siddhu" />
+            <img id="sidhu-avatar" src="/api/placeholder/100/100" alt="Navjot Singh Sidhu" />
         </div>
         
         <div class="action-buttons">
@@ -329,8 +329,8 @@
     <div id="flash-message">Thoko Tali!</div>
     
     <script>
-        // Sample Siddhu quotes
-        const siddhuQuotes = [
+        // Sample Sidhu quotes
+        const sidhuQuotes = [
             "The gap between practice and performance is always filled with exclamation marks of failure.",
             "When you lose, you should lose gracefully. But when you win, you should THOKO TAALI!",
             "He's like a broken watch. Right twice a day but you never know when.",
@@ -374,8 +374,8 @@
         
         // Functions
         function getRandomQuote() {
-            const randomIndex = Math.floor(Math.random() * siddhuQuotes.length);
-            return siddhuQuotes[randomIndex];
+            const randomIndex = Math.floor(Math.random() * sidhuQuotes.length);
+            return sidhuQuotes[randomIndex];
         }
         
         function getRandomColor() {
@@ -405,7 +405,7 @@
             savedQuotesList.innerHTML = "";
             
             if (savedQuotes.length === 0) {
-                savedQuotesList.innerHTML = "<p>No quotes saved yet. Save some Siddhu wisdom!</p>";
+                savedQuotesList.innerHTML = "<p>No quotes saved yet. Save some Sidhu wisdom!</p>";
                 return;
             }
             
@@ -442,7 +442,7 @@
         }
         
         function copyQuote() {
-            const textToCopy = `"${currentQuote}" - Navjot Singh Siddhu\n\nGet more Siddhu wisdom! Download the Siddhu-fy app now!`;
+            const textToCopy = `"${currentQuote}" - Navjot Singh Sidhu\n\nGet more Sidhu wisdom! Download the Sidhu-fy app now!`;
             
             navigator.clipboard.writeText(textToCopy)
                 .then(() => {
